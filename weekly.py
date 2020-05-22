@@ -77,7 +77,7 @@ def main():
     data = [make_dates(d) for d in data]
 
     start = data[0].start
-    days_to_end_week = ((LAST_WEEK_DAY - start.weekday()) % 7) or 7
+    days_to_end_week = ((FIRST_WEEK_DAY - start.weekday()) % 7) or 7
     end_week = (
         datetime.datetime(start.year, start.month, start.day) +
         datetime.timedelta(days=days_to_end_week)
