@@ -5,7 +5,7 @@ import json
 import sys
 
 TZ_OFFSET = datetime.timedelta(hours=-5)
-LAST_WEEK_DAY = 5  # Saturday
+FIRST_WEEK_DAY = 5  # Saturday
 
 
 @dataclasses.dataclass
