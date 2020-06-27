@@ -94,7 +94,7 @@ def main():
     for week in weeks:
         date = (week.end - datetime.timedelta(days=1)).strftime("%Y-%m-%d")
         days = week.time.total_seconds() / 60 / 60
-        print(f"Week ending {date}: {days:0.2g} hours")
+        print(f"Week ending {date}: {days:0.1f} hours")
 
 
 if __name__ == "__main__":
